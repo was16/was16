@@ -1,0 +1,32 @@
+object DM_Principal: TDM_Principal
+  OldCreateOrder = False
+  Height = 233
+  Width = 396
+  object IBDatabase1: TIBDatabase
+    DatabaseName = 'E:\was\bd\BASEP.FDB'
+    Params.Strings = (
+      'user_name=sysdba'
+      'password=masterkey')
+    LoginPrompt = False
+    Left = 48
+    Top = 72
+  end
+  object IBTransaction1: TIBTransaction
+    DefaultDatabase = IBDatabase1
+    DefaultAction = TARollback
+    AutoStopAction = saRollback
+    Left = 144
+    Top = 96
+  end
+  object IBDataSet1: TIBDataSet
+    Database = IBDatabase1
+    Transaction = IBTransaction1
+    Left = 120
+    Top = 24
+  end
+  object DataSource1: TDataSource
+    DataSet = IBDataSet1
+    Left = 248
+    Top = 64
+  end
+end

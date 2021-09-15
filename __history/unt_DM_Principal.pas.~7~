@@ -1,0 +1,56 @@
+unit unt_DM_Principal;
+
+interface
+
+uses
+  SysUtils, Classes, IBDatabase, DB, IBCustomDataSet;
+
+type
+  TDM_Principal = class(TDataModule)
+    IBDatabase1: TIBDatabase;
+    IBTransaction1: TIBTransaction;
+    IBDataSet1: TIBDataSet;
+    DataSource1: TDataSource;
+    IBDataSet1CODIGO: TIBStringField;
+    IBDataSet1APELIDO: TIBStringField;
+    IBDataSet1ENDERECO: TIBStringField;
+    IBDataSet1BAIRRO: TIBStringField;
+    IBDataSet1CIDADE: TIBStringField;
+    IBDataSet1UF: TIBStringField;
+    IBDataSet1CEP: TIBStringField;
+    IBDataSet1TIPO: TIntegerField;
+    IBDataSet1SITUACAO: TIntegerField;
+    IBDataSet1TELEFONE1: TIBStringField;
+    IBDataSet1CELULAR: TIBStringField;
+    IBDataSet1EMAIL: TIBStringField;
+    IBDataSet1RG: TIBStringField;
+    IBDataSet1CPF: TIBStringField;
+    IBDataSet1ESTADOCIVIL: TIBStringField;
+    IBDataSet1DATA_CADASTRO: TDateField;
+    IBDataSet1NASCIMENTO: TIBStringField;
+    IBDataSet1NUMERO: TIBStringField;
+    IBDataSet1RG_ORGAO: TIBStringField;
+    IBDataSet1RG_ESTADO: TIBStringField;
+    IBDataSet1RG_EMISSAO: TDateField;
+    IBDataSet1SEXO: TIBStringField;
+    IBDataSet1HISTORICO: TBlobField;
+    IBDataSet1CNAE: TIBStringField;
+    IBDataSet1COD_MUNICIPIO_IBGE: TIBStringField;
+    IBDataSet1IBGE: TIBStringField;
+    IBDataSet1FOTO: TIBStringField;
+    IBDataSet1NACIONALIDADE: TIBStringField;
+    IBDataSet1PAIS: TIBStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM_Principal: TDM_Principal;
+
+implementation
+
+{$R *.dfm}
+
+end.

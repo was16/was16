@@ -1,0 +1,38 @@
+unit unt_teste;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, GIFImg, ExtCtrls, StdCtrls, Menus;
+
+type
+  TFrm_Clientes = class(TForm)
+    bt_Sair: TButton;
+    Image1: TImage;
+    MainMenu1: TMainMenu;
+    Edit1: TMenuItem;
+    N2: TMenuItem;
+    Paste1: TMenuItem;
+    Copy1: TMenuItem;
+    Cut1: TMenuItem;
+    procedure bt_SairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Frm_Clientes: TFrm_Clientes;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrm_Clientes.bt_SairClick(Sender: TObject);
+begin
+    close;
+end;
+
+end.

@@ -1,0 +1,381 @@
+﻿object frm_Servico: Tfrm_Servico
+  Left = 0
+  Top = 0
+  Caption = 'Servico'
+  ClientHeight = 276
+  ClientWidth = 488
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbNServiço: TLabel
+    Left = 10
+    Top = 11
+    Width = 50
+    Height = 13
+    Caption = 'N'#186' Servi'#231'o'
+  end
+  object lbDataEntr: TLabel
+    Left = 10
+    Top = 39
+    Width = 66
+    Height = 14
+    Caption = 'Data de Ent'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbForPag: TLabel
+    Left = 221
+    Top = 217
+    Width = 117
+    Height = 14
+    Caption = 'Forma de Pagamento'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbSubTotal: TLabel
+    Left = 10
+    Top = 217
+    Width = 98
+    Height = 14
+    Caption = 'Valor dos Servi'#231'os'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbDesconto: TLabel
+    Left = 10
+    Top = 246
+    Width = 52
+    Height = 14
+    Caption = 'Desconto'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 221
+    Top = 246
+    Width = 46
+    Height = 14
+    Caption = 'Total R$'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbhoraEntr: TLabel
+    Left = 89
+    Top = 39
+    Width = 25
+    Height = 14
+    Caption = 'Hora'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbDataSaida: TLabel
+    Left = 182
+    Top = 39
+    Width = 75
+    Height = 14
+    Caption = 'Data de Saida'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbHoraSaida: TLabel
+    Left = 264
+    Top = 39
+    Width = 25
+    Height = 14
+    Caption = 'Hora'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbDescServiços: TLabel
+    Left = 10
+    Top = 116
+    Width = 137
+    Height = 14
+    Caption = 'Descri'#231#227'o dos Servi'#231'os'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbSituacao: TLabel
+    Left = 364
+    Top = 41
+    Width = 78
+    Height = 14
+    Caption = 'Situa'#231#227'o Atual'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edQuantidade: TEdit
+    Left = 64
+    Top = 8
+    Width = 65
+    Height = 21
+    TabOrder = 0
+    OnKeyPress = FormKeyPress
+  end
+  object DescrProdutos: TMemo
+    Left = 10
+    Top = 131
+    Width = 472
+    Height = 68
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    TabOrder = 10
+    OnKeyPress = FormKeyPress
+  end
+  object btClienteSer: TButton
+    Left = 135
+    Top = 8
+    Width = 58
+    Height = 21
+    Caption = 'Cliente'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnKeyPress = FormKeyPress
+  end
+  object edClienteSer: TEdit
+    Left = 198
+    Top = 8
+    Width = 284
+    Height = 21
+    TabOrder = 2
+    OnKeyPress = FormKeyPress
+  end
+  object DataEntr: TDateTimePicker
+    Left = 10
+    Top = 56
+    Width = 75
+    Height = 20
+    Date = 43718.046038750000000000
+    Time = 43718.046038750000000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnKeyPress = FormKeyPress
+  end
+  object cbFormPag: TComboBox
+    Left = 344
+    Top = 212
+    Width = 138
+    Height = 21
+    TabOrder = 14
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'A Vista'
+      'A Prazo'
+      'Cart'#227'o de Cr'#233'dito'
+      'Cart'#227'o de D'#233'bito'
+      'Cheque')
+  end
+  object edSubTotal: TEdit
+    Left = 129
+    Top = 214
+    Width = 83
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    Text = '0,00'
+    OnChange = edSubTotalChange
+    OnKeyPress = FormKeyPress
+  end
+  object edDesc: TEdit
+    Left = 65
+    Top = 243
+    Width = 56
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+    Text = '0,00 %'
+    OnKeyPress = FormKeyPress
+  end
+  object edDesconto: TEdit
+    Left = 127
+    Top = 243
+    Width = 85
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    Text = '0,00'
+    OnChange = edDescontoChange
+    OnKeyPress = FormKeyPress
+  end
+  object edHoraEntr: TEdit
+    Left = 91
+    Top = 56
+    Width = 49
+    Height = 21
+    TabOrder = 4
+    Text = '      : '
+    OnKeyPress = FormKeyPress
+  end
+  object DataSaida: TDateTimePicker
+    Left = 183
+    Top = 57
+    Width = 75
+    Height = 20
+    Date = 43718.046038750000000000
+    Time = 43718.046038750000000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnKeyPress = FormKeyPress
+  end
+  object edHoraSaida: TEdit
+    Left = 264
+    Top = 56
+    Width = 49
+    Height = 21
+    TabOrder = 6
+    Text = '      : '
+    OnKeyPress = FormKeyPress
+  end
+  object btTecnico: TButton
+    Left = 10
+    Top = 85
+    Width = 58
+    Height = 21
+    Caption = 'T'#233'cnico'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnKeyPress = FormKeyPress
+  end
+  object edTecnico: TEdit
+    Left = 74
+    Top = 85
+    Width = 408
+    Height = 21
+    TabOrder = 9
+    OnKeyPress = FormKeyPress
+  end
+  object cbSituacao: TComboBox
+    Left = 364
+    Top = 56
+    Width = 118
+    Height = 21
+    TabOrder = 7
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'Aberto'
+      'Execultando'
+      'Finalizado')
+  end
+  object bt_Salvar: TButton
+    Left = 344
+    Top = 240
+    Width = 73
+    Height = 25
+    Caption = 'Salvar'
+    TabOrder = 16
+    OnClick = bt_SalvarClick
+  end
+  object bt_Cancelar: TButton
+    Left = 416
+    Top = 240
+    Width = 66
+    Height = 25
+    Caption = 'Cancelar'
+    TabOrder = 17
+    OnClick = bt_CancelarClick
+  end
+  object edTotal: TEdit
+    Left = 273
+    Top = 243
+    Width = 65
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 15
+    Text = '0,00'
+    OnKeyPress = FormKeyPress
+  end
+end

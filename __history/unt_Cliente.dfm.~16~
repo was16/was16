@@ -1,0 +1,419 @@
+object Frm_Clientes: TFrm_Clientes
+  Left = 0
+  Top = 0
+  Caption = 'Clientes'
+  ClientHeight = 276
+  ClientWidth = 515
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = menuCliente
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbEmail: TLabel
+    Left = 8
+    Top = 170
+    Width = 38
+    Height = 13
+    Caption = 'E-MAIL:'
+  end
+  object lbTell: TLabel
+    Left = 200
+    Top = 138
+    Width = 54
+    Height = 13
+    Caption = 'TELEFONE:'
+  end
+  object lbCell: TLabel
+    Left = 8
+    Top = 138
+    Width = 48
+    Height = 13
+    Caption = 'CELULAR:'
+  end
+  object lbComp: TLabel
+    Left = 8
+    Top = 239
+    Width = 23
+    Height = 13
+    Caption = 'Obs:'
+  end
+  object Label12: TLabel
+    Left = 143
+    Top = 104
+    Width = 55
+    Height = 13
+    Caption = 'Nascimento'
+  end
+  object lbEstCivil: TLabel
+    Left = 268
+    Top = 74
+    Width = 73
+    Height = 13
+    Caption = 'ESTADO CIVIL:'
+  end
+  object lbSexo: TLabel
+    Left = 428
+    Top = 75
+    Width = 30
+    Height = 13
+    Caption = 'SEXO:'
+  end
+  object lbCPF: TLabel
+    Left = 124
+    Top = 75
+    Width = 23
+    Height = 13
+    Caption = 'CPF:'
+  end
+  object lbRG: TLabel
+    Left = 9
+    Top = 75
+    Width = 18
+    Height = 13
+    Caption = 'RG:'
+  end
+  object lbUF: TLabel
+    Left = 152
+    Top = 220
+    Width = 17
+    Height = 13
+    Caption = 'UF:'
+  end
+  object lbCity: TLabel
+    Left = 8
+    Top = 222
+    Width = 42
+    Height = 13
+    Caption = 'CIDADE:'
+  end
+  object lbLogradouro: TLabel
+    Left = 239
+    Top = 193
+    Width = 58
+    Height = 13
+    Caption = 'ENDERE'#199'O:'
+  end
+  object lbBairro: TLabel
+    Left = 104
+    Top = 193
+    Width = 43
+    Height = 13
+    Caption = 'BAIRRO:'
+  end
+  object lbNumero: TLabel
+    Left = 8
+    Top = 193
+    Width = 47
+    Height = 13
+    Caption = 'N'#218'MERO:'
+  end
+  object lbNome: TLabel
+    Left = 115
+    Top = 19
+    Width = 33
+    Height = 13
+    Caption = 'NOME:'
+  end
+  object lbPessoa: TLabel
+    Left = 8
+    Top = 104
+    Width = 43
+    Height = 13
+    Caption = 'PESSOA:'
+  end
+  object lbFantasia: TLabel
+    Left = 9
+    Top = 45
+    Width = 54
+    Height = 13
+    Caption = 'FANTASIA:'
+  end
+  object lb_Codigo: TLabel
+    Left = 8
+    Top = 19
+    Width = 45
+    Height = 13
+    Caption = 'CODIGO:'
+  end
+  object Label1: TLabel
+    Left = 220
+    Top = 220
+    Width = 23
+    Height = 13
+    Caption = 'CEP:'
+  end
+  object edEmail: TEdit
+    Left = 50
+    Top = 164
+    Width = 453
+    Height = 21
+    TabOrder = 11
+    OnKeyPress = FormKeyPress
+  end
+  object cmbSexo: TComboBox
+    Left = 460
+    Top = 72
+    Width = 43
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 7
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'F'
+      'M')
+  end
+  object edCell: TEdit
+    Left = 62
+    Top = 135
+    Width = 115
+    Height = 21
+    TabOrder = 9
+    OnKeyPress = FormKeyPress
+  end
+  object edTel: TEdit
+    Left = 255
+    Top = 135
+    Width = 138
+    Height = 21
+    TabOrder = 10
+    OnKeyPress = FormKeyPress
+  end
+  object edCPF: TEdit
+    Left = 150
+    Top = 72
+    Width = 115
+    Height = 21
+    TabOrder = 5
+    OnKeyPress = FormKeyPress
+  end
+  object edRG: TEdit
+    Left = 30
+    Top = 72
+    Width = 91
+    Height = 21
+    TabOrder = 4
+    OnKeyPress = FormKeyPress
+  end
+  object edBairro: TEdit
+    Left = 147
+    Top = 190
+    Width = 85
+    Height = 21
+    TabOrder = 14
+    OnKeyPress = FormKeyPress
+  end
+  object edNum: TEdit
+    Left = 59
+    Top = 190
+    Width = 40
+    Height = 21
+    TabOrder = 13
+    OnKeyPress = FormKeyPress
+  end
+  object edLogradoro: TEdit
+    Left = 299
+    Top = 190
+    Width = 204
+    Height = 21
+    TabOrder = 12
+    OnKeyPress = FormKeyPress
+  end
+  object Edt_Nome: TEdit
+    Left = 154
+    Top = 16
+    Width = 349
+    Height = 21
+    TabOrder = 1
+    OnKeyPress = FormKeyPress
+  end
+  object CmbPss: TComboBox
+    Left = 57
+    Top = 101
+    Width = 77
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 3
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'FISICA'
+      'JURIDICA')
+  end
+  object edFantasia: TEdit
+    Left = 67
+    Top = 43
+    Width = 436
+    Height = 21
+    TabOrder = 2
+    OnKeyPress = FormKeyPress
+  end
+  object DateNascimento: TDateTimePicker
+    Left = 202
+    Top = 101
+    Width = 95
+    Height = 21
+    Date = 43560.035034189820000000
+    Time = 43560.035034189820000000
+    TabOrder = 8
+    OnKeyPress = FormKeyPress
+  end
+  object Edit1: TEdit
+    Left = 57
+    Top = 16
+    Width = 52
+    Height = 21
+    Enabled = False
+    TabOrder = 0
+    OnKeyPress = FormKeyPress
+  end
+  object edCidade: TEdit
+    Left = 50
+    Top = 217
+    Width = 97
+    Height = 21
+    TabOrder = 15
+    OnKeyPress = FormKeyPress
+  end
+  object ComboBox1: TComboBox
+    Left = 347
+    Top = 71
+    Width = 77
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 6
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'Casado'
+      'Viuvo'
+      'Solteiro')
+  end
+  object ComboBox2: TComboBox
+    Left = 172
+    Top = 217
+    Width = 38
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 16
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'AC'
+      'AL'
+      'AM'
+      'AP'
+      'BA'
+      'CE'
+      'DF'
+      'ES'
+      'GO'
+      'MA'
+      'MG'
+      'MS'
+      'MT'
+      'PA'
+      'PB'
+      'PE'
+      'PI'
+      'PR'
+      'RJ'
+      'RN'
+      'RO'
+      'RR'
+      'RS'
+      'SC'
+      'SE'
+      'SP'
+      'TO')
+  end
+  object Edit3: TEdit
+    Left = 244
+    Top = 217
+    Width = 84
+    Height = 21
+    TabOrder = 17
+    OnKeyPress = FormKeyPress
+  end
+  object Edit2: TEdit
+    Left = 37
+    Top = 242
+    Width = 301
+    Height = 21
+    TabOrder = 18
+    OnKeyPress = FormKeyPress
+  end
+  object Button1: TButton
+    Left = 356
+    Top = 240
+    Width = 73
+    Height = 25
+    Caption = 'Salvar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 19
+    OnClick = bt_SalvarClick
+  end
+  object Button2: TButton
+    Left = 435
+    Top = 240
+    Width = 66
+    Height = 25
+    Caption = 'Cancelar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 20
+    OnClick = bt_CancelarClick
+  end
+  object menuCliente: TMainMenu
+    Left = 456
+    Top = 120
+    object File1: TMenuItem
+      Caption = '&Cadastro'
+      object New1: TMenuItem
+        Caption = '&Novo'
+        ShortCut = 16462
+      end
+      object Open1: TMenuItem
+        Caption = '&Aterar'
+        ShortCut = 16466
+      end
+      object Save1: TMenuItem
+        Caption = '&Excluir'
+        ShortCut = 46
+      end
+      object SaveAs1: TMenuItem
+        Caption = 'Pesquisar'
+        ShortCut = 16460
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object Print1: TMenuItem
+        Caption = '&Duplicar'
+        ShortCut = 16452
+      end
+      object PrintSetup1: TMenuItem
+        Caption = 'Relatorio'
+        ShortCut = 16464
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Caption = 'E&xit'
+      end
+    end
+  end
+end

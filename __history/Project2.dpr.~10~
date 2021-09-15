@@ -1,0 +1,25 @@
+program Project2;
+
+uses
+  Forms,
+  unt_principal in 'unt_principal.pas' {Frm_Principal},
+  unt_Cliente in 'Cliente\unt_Cliente.pas' {Frm_Clientes},
+  Unt_produto in 'Produto\Unt_produto.pas' {frm_Produto},
+  unt_servico in 'Servico\unt_servico.pas' {frm_Servico},
+  unt_venda in 'Venda\unt_venda.pas' {frm_Venda},
+  Unt_heranca in 'Heranca\Unt_heranca.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Title := 'PRWG-E';
+  Application.CreateForm(TFrm_Principal, Frm_Principal);
+  Application.CreateForm(TFrm_Clientes, Frm_Clientes);
+  Application.CreateForm(Tfrm_Produto, frm_Produto);
+  Application.CreateForm(Tfrm_Servico, frm_Servico);
+  Application.CreateForm(Tfrm_Venda, frm_Venda);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

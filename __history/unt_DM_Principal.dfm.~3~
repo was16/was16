@@ -1,0 +1,33 @@
+object DM_Principal: TDM_Principal
+  OldCreateOrder = False
+  Height = 233
+  Width = 396
+  object DataSource_cliente: TDataSource
+    DataSet = Tab_Cliente
+    Left = 168
+    Top = 128
+  end
+  object IBDatabase: TIBDatabase
+    Connected = True
+    DatabaseName = 'C:\was\bd\BASEP.FDB'
+    Params.Strings = (
+      'user_name=sysdba'
+      'password=masterkey'
+      'lc_ctype=WIN1254')
+    LoginPrompt = False
+    Left = 72
+    Top = 48
+  end
+  object Tab_Cliente: TIBDataSet
+    Database = IBDatabase
+    Transaction = IBTransaction
+    Left = 40
+    Top = 136
+  end
+  object IBTransaction: TIBTransaction
+    Active = True
+    DefaultDatabase = IBDatabase
+    Left = 208
+    Top = 64
+  end
+end

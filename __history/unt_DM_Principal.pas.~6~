@@ -1,0 +1,27 @@
+unit unt_DM_Principal;
+
+interface
+
+uses
+  SysUtils, Classes, IBDatabase, DB, IBCustomDataSet;
+
+type
+  TDM_Principal = class(TDataModule)
+    IBDatabase1: TIBDatabase;
+    IBTransaction1: TIBTransaction;
+    IBDataSet1: TIBDataSet;
+    DataSource1: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM_Principal: TDM_Principal;
+
+implementation
+
+{$R *.dfm}
+
+end.

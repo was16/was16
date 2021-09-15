@@ -1,0 +1,102 @@
+unit unt_servico;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  Tfrm_Servico = class(TForm)
+    lbNServiço: TLabel;
+    edQuantidade: TEdit;
+    DescrProdutos: TMemo;
+    btClienteSer: TButton;
+    edClienteSer: TEdit;
+    lbDataEntr: TLabel;
+    DataEntr: TDateTimePicker;
+    lbForPag: TLabel;
+    cbFormPag: TComboBox;
+    lbSubTotal: TLabel;
+    edSubTotal: TEdit;
+    lbDesconto: TLabel;
+    edDesc: TEdit;
+    edDesconto: TEdit;
+    Label1: TLabel;
+    lbhoraEntr: TLabel;
+    edHoraEntr: TEdit;
+    lbDataSaida: TLabel;
+    DataSaida: TDateTimePicker;
+    lbHoraSaida: TLabel;
+    edHoraSaida: TEdit;
+    lbDescServiços: TLabel;
+    btTecnico: TButton;
+    edTecnico: TEdit;
+    lbSituacao: TLabel;
+    cbSituacao: TComboBox;
+    bt_Salvar: TButton;
+    bt_Cancelar: TButton;
+    edTotal: TEdit;
+    procedure bt_SalvarClick(Sender: TObject);
+    procedure bt_CancelarClick(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure edSubTotalChange(Sender: TObject);
+    procedure edDescontoChange(Sender: TObject);
+
+
+  private
+      {Private declarations}
+    FCampo1,
+    FCampo2,
+    FCampo3,
+    FCampo4,
+    FCampo5: Real;
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_Servico: Tfrm_Servico;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tfrm_Servico.bt_CancelarClick(Sender: TObject);
+begin
+   close;
+   frm_Servico.Release;
+end;
+
+procedure Tfrm_Servico.bt_SalvarClick(Sender: TObject);
+begin
+   close;
+   frm_Servico.Release;
+end;
+
+procedure Tfrm_Servico.edDescontoChange(Sender: TObject);
+begin
+    FCampo2 := StrToFloat(edDesconto.Text);
+    FCampo3 := (FCampo1 - FCampo2);
+    FCampo4 := ((FCampo2/FCampo1);
+    FCampo5 := (FCampo4*100);
+    edDesc.Text := FloatToStr (FCampo3);
+    edTotal.Text := FloatToStr (FCampo3);
+end;
+
+procedure Tfrm_Servico.edSubTotalChange(Sender: TObject);
+begin
+    FCampo1 := StrToFloat(edSubTotal.Text);
+end;
+
+
+procedure Tfrm_Servico.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if key = #13 then
+     begin
+       Key := #0;
+       Perform(Wm_NextDlgCtl,0,0);
+     end;
+end;
+
+end.

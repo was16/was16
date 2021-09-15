@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Cliente"/>
+    <File Path="Cliente\unt_Cliente.pas"/>
+    <File Path="Cliente\unt_Cliente.dfm"/>
+    <File Path="Heranca"/>
+    <File Path="Heranca\Unt_heranca.pas"/>
+    <File Path="Heranca\Unt_heranca.dfm"/>
+    <File Path="Produto"/>
+    <File Path="Produto\Unt_produto.pas"/>
+    <File Path="Produto\Unt_produto.dfm"/>
+    <File Path="Servico"/>
+    <File Path="Servico\unt_servico.pas"/>
+    <File Path="Servico\unt_servico.dfm"/>
+    <File Path="Venda"/>
+    <File Path="Venda\unt_venda.pas"/>
+    <File Path="Venda\unt_venda.dfm"/>
+    <File Path="unt_DM_Principal.pas"/>
+    <File Path="unt_DM_Principal.dfm"/>
+    <File Path="unt_principal.pas"/>
+    <File Path="unt_principal.dfm"/>
+  </ProjectSortOrder>
+	<Transactions>
+    <Transaction>2019/09/27 11:27:11.000.696,=E:\was\Unit1.pas</Transaction>
+    <Transaction>2019/09/27 11:53:08.000.295,E:\was\Cliente\unt_Cliente.pas=</Transaction>
+    <Transaction>2019/09/27 11:53:22.000.933,E:\was\Unit1.pas=E:\was\Cliente\unt_Cliente.pas</Transaction>
+    <Transaction>2019/09/27 11:53:22.000.933,E:\was\Unit1.dfm=E:\was\Cliente\unt_Cliente.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

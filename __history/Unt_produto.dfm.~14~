@@ -1,0 +1,305 @@
+object frm_Produto: Tfrm_Produto
+  Left = 0
+  Top = 0
+  Caption = 'Produto'
+  ClientHeight = 244
+  ClientWidth = 467
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbLucro: TLabel
+    Left = 340
+    Top = 140
+    Width = 30
+    Height = 13
+    Caption = 'Lucro:'
+  end
+  object lbEstAtual: TLabel
+    Left = 173
+    Top = 180
+    Width = 71
+    Height = 13
+    Caption = 'Estoque Atual:'
+  end
+  object lbSaida: TLabel
+    Left = 212
+    Top = 208
+    Width = 26
+    Height = 13
+    Caption = 'Saida'
+  end
+  object lbEntrada: TLabel
+    Left = 10
+    Top = 207
+    Width = 38
+    Height = 13
+    Caption = 'Entrada'
+  end
+  object lbCusto: TLabel
+    Left = 340
+    Top = 87
+    Width = 32
+    Height = 13
+    Caption = 'Custo:'
+  end
+  object lbVenda: TLabel
+    Left = 340
+    Top = 114
+    Width = 34
+    Height = 13
+    Caption = 'Venda:'
+  end
+  object lbEstInicial: TLabel
+    Left = 173
+    Top = 153
+    Width = 73
+    Height = 13
+    Caption = 'Estoque Inicial:'
+  end
+  object lbMarca: TLabel
+    Left = 10
+    Top = 180
+    Width = 33
+    Height = 13
+    Caption = 'Marca:'
+  end
+  object lbFornecedor: TLabel
+    Left = 8
+    Top = 116
+    Width = 59
+    Height = 13
+    Caption = 'Fornecedor:'
+  end
+  object lbGrupo: TLabel
+    Left = 10
+    Top = 153
+    Width = 33
+    Height = 13
+    Caption = 'Grupo:'
+  end
+  object lbNfe: TLabel
+    Left = 8
+    Top = 84
+    Width = 33
+    Height = 13
+    Caption = 'NEF-e:'
+  end
+  object lbUnidade: TLabel
+    Left = 388
+    Top = 22
+    Width = 43
+    Height = 13
+    Caption = 'Unidade:'
+  end
+  object LbProduto: TLabel
+    Left = 8
+    Top = 52
+    Width = 42
+    Height = 13
+    Caption = 'Produto:'
+  end
+  object lbData: TLabel
+    Left = 343
+    Top = 52
+    Width = 27
+    Height = 13
+    Caption = 'Data:'
+  end
+  object lbTipo: TLabel
+    Left = 273
+    Top = 22
+    Width = 24
+    Height = 13
+    Caption = 'Tipo:'
+  end
+  object lbCodBarra: TLabel
+    Left = 126
+    Top = 22
+    Width = 53
+    Height = 13
+    Caption = 'Cod.Barra:'
+  end
+  object lbCodigo: TLabel
+    Left = 13
+    Top = 22
+    Width = 37
+    Height = 13
+    Caption = 'Codigo:'
+  end
+  object edNfe: TEdit
+    Left = 52
+    Top = 81
+    Width = 281
+    Height = 21
+    TabOrder = 5
+    OnKeyPress = FormKeyPress
+  end
+  object Bt_salvar: TButton
+    Left = 339
+    Top = 169
+    Width = 121
+    Height = 25
+    Caption = 'Salvar'
+    TabOrder = 17
+    OnClick = Bt_salvarClick
+  end
+  object edLucro: TEdit
+    Left = 378
+    Top = 137
+    Width = 82
+    Height = 21
+    TabOrder = 16
+    OnKeyPress = FormKeyPress
+  end
+  object edEstoqueAtual: TEdit
+    Left = 250
+    Top = 177
+    Width = 83
+    Height = 21
+    TabOrder = 11
+    OnKeyPress = FormKeyPress
+  end
+  object edEstoqueInicial: TEdit
+    Left = 250
+    Top = 150
+    Width = 83
+    Height = 21
+    TabOrder = 10
+    OnKeyPress = FormKeyPress
+  end
+  object edOut: TEdit
+    Left = 251
+    Top = 204
+    Width = 82
+    Height = 21
+    TabOrder = 12
+    OnKeyPress = FormKeyPress
+  end
+  object edIn: TEdit
+    Left = 49
+    Top = 204
+    Width = 82
+    Height = 21
+    TabOrder = 9
+    OnKeyPress = FormKeyPress
+  end
+  object edCusto: TEdit
+    Left = 378
+    Top = 84
+    Width = 82
+    Height = 21
+    TabOrder = 14
+    OnChange = edCustoChange
+    OnKeyPress = FormKeyPress
+  end
+  object edVenda: TEdit
+    Left = 378
+    Top = 111
+    Width = 82
+    Height = 21
+    TabOrder = 15
+    OnChange = edVendaChange
+    OnKeyPress = FormKeyPress
+  end
+  object edMarca: TEdit
+    Left = 49
+    Top = 177
+    Width = 82
+    Height = 21
+    TabOrder = 8
+    OnKeyPress = FormKeyPress
+  end
+  object edFornecedor: TEdit
+    Left = 70
+    Top = 111
+    Width = 263
+    Height = 21
+    TabOrder = 6
+    OnKeyPress = FormKeyPress
+  end
+  object CBTipo: TComboBox
+    Left = 299
+    Top = 22
+    Width = 75
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 2
+    OnKeyPress = FormKeyPress
+    Items.Strings = (
+      'VENDA'
+      'CONSUMO')
+  end
+  object edGrupo: TEdit
+    Left = 49
+    Top = 150
+    Width = 82
+    Height = 21
+    TabOrder = 7
+    OnKeyPress = FormKeyPress
+  end
+  object edProduto: TEdit
+    Left = 52
+    Top = 49
+    Width = 281
+    Height = 21
+    TabOrder = 4
+    OnKeyPress = FormKeyPress
+  end
+  object edUnit: TEdit
+    Left = 434
+    Top = 22
+    Width = 26
+    Height = 21
+    TabOrder = 3
+    OnKeyPress = FormKeyPress
+  end
+  object edCodBarra: TEdit
+    Left = 185
+    Top = 22
+    Width = 80
+    Height = 21
+    TabOrder = 1
+    OnKeyPress = FormKeyPress
+  end
+  object Edcodigo: TEdit
+    Left = 54
+    Top = 22
+    Width = 66
+    Height = 21
+    TabOrder = 0
+    OnKeyPress = FormKeyPress
+  end
+  object bt_Cancelar: TButton
+    Left = 339
+    Top = 200
+    Width = 121
+    Height = 25
+    Caption = 'Cancelar'
+    TabOrder = 18
+    OnClick = bt_CancelarClick
+  end
+  object DataSaida: TDateTimePicker
+    Left = 385
+    Top = 52
+    Width = 75
+    Height = 20
+    Date = 43718.046038750000000000
+    Time = 43718.046038750000000000
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    OnKeyPress = FormKeyPress
+  end
+end
